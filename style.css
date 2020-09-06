@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'mainPageTitle';
+    grid-template-rows: 947px 1100px;
+    background-color: rgb(231, 231, 231);
+}
+.header{
+    position: relative;
+    grid-area: header;
+    width: 100%;
+    height: 947px;
+    background: url(../работа4/img/headerBacMain.png) no-repeat;
+    background-size: 100% 100%;
+}
+.mainBack{
+    width: 68%; 
+    height: 100%;
+}
+.mainNav{
+    list-style-type: none;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.mainNav li{
+    margin-left: 90px;
+}
+.logoItem{
+    padding: 6px 8px 6px 8px;
+    border-radius: 50%;
+}
+.logo img{
+    margin-left: 10px;
+}
+.logo{
+    left: 65%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+.mainContent{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 2%;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.stab{
+    padding-left: 130px;
+    padding-right:130px;
+}
+.intro{
+    position: absolute;
+    top: 32%;
+    color: white;
+    width:100%;
+}
+.mainTitle{
+    font-size: 42px;
+    position: relative;
+    margin-top: 60px;
+}
+.preEnd{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: 300;
+}
+.btn{
+    color: black;
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 20px;
+    transition: all ease 0.3s;
+}
+.btn:hover{
+    color: white;
+    background-color: #eb5635;
+}
+.flex{
+    display: flex;
+}
+.mainTitle ::before{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    content: '';
+    top: -26%;
+    background-color: #eb5635;
+}
+.mainPageTitle{
+    grid-area: mainPageTitle;
+    width: 100%;
+    position: relative;
+    background: url(../работа4/img/main1.png) no-repeat top;
+    background-size: 100%;
+}
+.mainintro{
+    margin-left: 670px; 
+    padding-top: 36px;
+}
+.message{
+    position: absolute;
+    left: 60%;
+    color: gray;
+    opacity: 0.6;
+    top: 45px;
+}
+.fitem1{
+   background: url(../работа4/img/mask1.png) no-repeat;
+   width: 511px;
+   height: 495px;
+}
+.fitem{
+    position: relative;
+}
+.fitem2{
+    background: url(../работа4/img/car.png) no-repeat top;
+    width: 244px;
+    height: 490px;
+    background-color: white;
+}
+.fitem3{
+    width: 511px;
+    height: 490px;
+    background:url(../работа4/img/gomer.png) no-repeat;
+}
+.fcenter{
+    position: absolute;
+    top: 55%;
+    padding: 0px 40px;
+    width: 100%;
+}
+.fcenter1 h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.fcenter1 p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+.fcenter1{
+    position: absolute;
+    padding: 40px 40px;
+    width: 100%;
+    height: 100%;
+    color: gray;
+}
+.webView{
+    position: relative;
+    bottom: 0;
+    padding: 5px 15px;
+    background-color: #eb5635;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+.webView:hover{
+    color: black;
+    background-color: transparent;
+    border: 1px solid #eb5635;
+}
+.right{
+    width: 50%;
+    height: 99%;
+    position: absolute;
+    left: 50%;
+    background-color: white;
+}
+.right2{
+    background-color: transparent;
+}
+.futureGames{
+    justify-content: space-between;
+    position: relative;
+    top: 2%;
+}
+.ios{
+    background-color: #eb5635;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+}
+.act{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #eb5635;
+    color: #eb5635;
+    justify-content: center;
+    margin-right: 15px;
+}
+.lineDownTitle{
+    position: relative;
+    font-size: 36px;
+}
+.lineDownTitle::after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 3px;
+    top: 100%;
+    background-color: #eb5635;
+}
+.footer{
+    position: relative;
+    top: 5%;
+    height: 100%;
+}
+.weHeader{
+    justify-content: space-between;
+}
+.weHeader p{
+    width: 60%;
+}
+.disc{
+    position: absolute;
+    top: 70%;
+}
+.gallary{
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.gallary img{
+    height: 63px;
+    width: 63px;
+}
+.active{
+    border: 5px solid #eb5635;
+}
+.arrowleft,.arrowright{
+    cursor: pointer;
+    height: 63px;
+    width: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+.usHeader{
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.usHeader p {
+    width: 60%;
+}
+.usContent{
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.usItem h1{
+    font-size: 29px;
+}
+.usItem{
+    padding: 20px 40px;
+    width: 49%;
+    background-color: white;
+    height: 200px;
+}
+.timeinfo{
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    color: black;
+    opacity: 0.7;
+}
+.tmessage{
+    color: gray;
+    opacity: 0.9;
+}
+a{
+    color: blue;
+}
+.timeinfo span{
+    margin-left: 10px;
+}
+.timeinfo img:last-of-type{
+    margin-left: 46px;
+    margin-right: 10px;
+}
+.preEnd2{
+    justify-content: space-between;
+    position: relative;
+    top: 8%;
+}
+.preName{
+    position: absolute;
+    top: -15%;
+}
+.preEndItem{
+    padding: 20px 30px;
+    width: 32%;
+    height: 350px;
+    background-color: white;
+}
+.preContent1{
+    align-items: center;
+    height: 50%;
+}
+.preContent1 div p{
+    color: gray;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+.preContent1 div{
+    margin-left: 20px;
+}
+.preContent1 h1{
+    font-size: 29px;
+}
+.links{
+    height: 80px;
+    background-color: white;
+    align-items: center;
+}
+.endNav li:first-of-type{
+    margin-left: 0;
+    margin-right: -70px;
+}
+.endNav li:last-of-type {
+    margin-left: 23%;
+}
