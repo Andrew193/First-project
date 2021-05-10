@@ -1,102 +1,118 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-body,html{
-    height: 100%;
+
+body, html {
+    height: auto;
 }
-body{
-    width: 100%;
-    max-width: 2000px;
-    display: grid;
-    grid-template-areas: 
-    'header'
-    'mainPageTitle';
-    grid-template-rows: 947px 1100px;
-    background-color: rgb(231, 231, 231);
-}
-.header{
+
+.header {
     position: relative;
-    grid-area: header;
-    width: 100%;
-    height: 947px;
-    background: url(../работа4/img/headerBacMain.png) no-repeat;
-    background-size: 100% 100%;
+    background: url(./img/headerBacMain.png) no-repeat;
+    background-size: contain;
 }
-.mainBack{
-    width: 68%; 
-    height: 100%;
+
+.mainBack {
+    width: 68%;
 }
-.mainNav{
+
+.mainNav {
     list-style-type: none;
-    width: 100%;
     background-color: white;
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 30px;
+    width: -webkit-fill-available;
 }
-.mainNav li{
+
+.mainNav li {
     margin-left: 90px;
 }
-.logoItem{
+
+.logoItem {
     padding: 6px 8px 6px 8px;
     border-radius: 50%;
 }
-.logo img{
+
+.logo img {
     margin-left: 10px;
 }
-.logo{
+
+.logo {
     left: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 80px;
 }
-.mainContent{
+
+.mainContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
-    width: 100%;
     top: 2%;
     padding-left: 130px;
     padding-right: 130px;
 }
-.stab{
-    padding-left: 130px;
-    padding-right:130px;
+
+.stab {
+    padding-left: 1%;
+    padding-right: 1%;
 }
-.intro{
+
+.intro {
     position: absolute;
     top: 32%;
     color: white;
-    width:100%;
 }
-.mainTitle{
+
+.mainTitle {
     font-size: 42px;
     position: relative;
     margin-top: 60px;
 }
-.preEnd{
+
+.preEnd {
     margin-bottom: 40px;
     margin-top: 40px;
     font-weight: 300;
 }
-.btn{
+
+.btn {
     color: black;
     padding: 5px 15px;
     background-color: white;
     border-radius: 20px;
     margin-right: 20px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
-.btn:hover{
+
+.btn:hover {
     color: white;
     background-color: #eb5635;
 }
-.flex{
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
-.mainTitle ::before{
+
+.mainTitle ::before {
     display: block;
     position: absolute;
     height: 2px;
@@ -105,66 +121,75 @@ body{
     top: -26%;
     background-color: #eb5635;
 }
-.mainPageTitle{
-    grid-area: mainPageTitle;
-    width: 100%;
+
+.mainPageTitle {
     position: relative;
-    background: url(../работа4/img/main1.png) no-repeat top;
-    background-size: 100%;
+    background: url(./img/main1.png) no-repeat top;
 }
-.mainintro{
-    margin-left: 670px; 
+
+.mainintro {
+    margin-left: 35%;
     padding-top: 36px;
 }
-.message{
+
+.message {
     position: absolute;
     left: 60%;
     color: gray;
     opacity: 0.6;
     top: 45px;
 }
-.fitem1{
-   background: url(../работа4/img/mask1.png) no-repeat;
-   width: 511px;
-   height: 495px;
+
+.fitem1 {
+    background: url(./img/mask1.png) no-repeat;
+    width: 511px;
+    height: 495px;
 }
-.fitem{
+
+.fitem {
     position: relative;
 }
-.fitem2{
-    background: url(../работа4/img/car.png) no-repeat top;
+
+.fitem2 {
+    background: url(./img/car.png) no-repeat top;
     width: 244px;
     height: 490px;
     background-color: white;
 }
-.fitem3{
+
+.fitem3 {
     width: 511px;
     height: 490px;
-    background:url(../работа4/img/gomer.png) no-repeat;
+    background: url(./img/gomer.png) no-repeat;
 }
-.fcenter{
+
+.fcenter {
     position: absolute;
     top: 55%;
     padding: 0px 40px;
     width: 100%;
 }
-.fcenter1 h1{
+
+.fcenter1 h1 {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.fcenter1 p{
+
+.fcenter1 p {
     margin-top: 20px;
     margin-bottom: 30px;
     opacity: 0.7;
 }
-.fcenter1{
+
+.fcenter1 {
     position: absolute;
     padding: 40px 40px;
     width: 100%;
     height: 100%;
     color: gray;
 }
-.webView{
+
+.webView {
     position: relative;
     bottom: 0;
     padding: 5px 15px;
@@ -172,50 +197,68 @@ body{
     color: white;
     text-align: center;
     border-radius: 15px;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 }
-.webView:hover{
+
+.webView:hover {
     color: black;
     background-color: transparent;
     border: 1px solid #eb5635;
 }
-.right{
+
+.right {
     width: 50%;
     height: 99%;
     position: absolute;
     left: 50%;
     background-color: white;
 }
-.right2{
+
+.right2 {
     background-color: transparent;
 }
-.futureGames{
-    justify-content: space-between;
+
+.futureGames {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     position: relative;
     top: 2%;
 }
-.ios{
+
+.ios {
     background-color: #eb5635;
     color: white;
     padding: 5px 10px;
     position: absolute;
 }
-.act{
+
+.act {
     height: 30px;
     width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 50%;
     border: 1px solid #eb5635;
     color: #eb5635;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-right: 15px;
 }
-.lineDownTitle{
+
+.lineDownTitle {
     position: relative;
     font-size: 36px;
 }
-.lineDownTitle::after{
+
+.lineDownTitle::after {
     display: block;
     position: absolute;
     content: '';
@@ -224,125 +267,176 @@ body{
     top: 100%;
     background-color: #eb5635;
 }
-.footer{
+
+.footer {
     position: relative;
     top: 5%;
     height: 100%;
 }
-.weHeader{
+
+.weHeader {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.weHeader p{
+
+.weHeader p {
     width: 60%;
 }
-.disc{
+
+.disc {
     position: absolute;
     top: 70%;
 }
-.gallary{
+
+.gallary {
     position: relative;
     height: 150px;
     margin-top: 40px;
     padding-top: 20px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     background-color: white;
 }
-.gallary img{
+
+.gallary img {
     height: 63px;
     width: 63px;
 }
-.active{
+
+.active {
     border: 5px solid #eb5635;
 }
-.arrowleft,.arrowright{
+
+.arrowleft, .arrowright {
     cursor: pointer;
     height: 63px;
     width: 63px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: gray;
     color: white;
 }
-.usHeader{
+
+.usHeader {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 3%;
 }
+
 .usHeader p {
     width: 60%;
 }
-.usContent{
+
+.usContent {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 3%;
 }
-.usItem h1{
+
+.usItem h1 {
     font-size: 29px;
 }
-.usItem{
+
+.usItem {
     padding: 20px 40px;
     width: 49%;
     background-color: white;
     height: 200px;
 }
-.timeinfo{
-    margin-top: 10px; 
+
+.timeinfo {
+    margin-top: 10px;
     margin-bottom: 20px;
     color: black;
     opacity: 0.7;
 }
-.tmessage{
+
+.tmessage {
     color: gray;
     opacity: 0.9;
 }
-a{
+
+a {
     color: blue;
 }
-.timeinfo span{
+
+.timeinfo span {
     margin-left: 10px;
 }
-.timeinfo img:last-of-type{
+
+.timeinfo img:last-of-type {
     margin-left: 46px;
     margin-right: 10px;
 }
-.preEnd2{
+
+.preEnd2 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
-    top: 8%;
 }
-.preName{
+
+.preName {
     position: absolute;
     top: -15%;
 }
-.preEndItem{
+
+.preEndItem {
     padding: 20px 30px;
     width: 32%;
     height: 350px;
     background-color: white;
 }
-.preContent1{
+
+.preContent1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 50%;
 }
-.preContent1 div p{
+
+.preContent1 div p {
     color: gray;
     opacity: 0.7;
     margin-top: 10px;
 }
-.preContent1 div{
+
+.preContent1 div {
     margin-left: 20px;
 }
-.preContent1 h1{
+
+.preContent1 h1 {
     font-size: 29px;
 }
-.links{
+
+.links {
     height: 80px;
     background-color: white;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
-.endNav li:first-of-type{
+
+.endNav li:first-of-type {
     margin-left: 0;
     margin-right: -70px;
 }
+
 .endNav li:last-of-type {
     margin-left: 23%;
+}
+
+@media(min-width:2500px) {
+    .futureGames {}
 }
